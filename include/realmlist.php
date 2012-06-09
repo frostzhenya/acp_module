@@ -10,7 +10,7 @@
 | without written permission from the original author(s).
 +--------------------------------------------------------*/
 
-	$config['revision'] = 'wcf_revision_nr = [349]';
+	$config['revision'] = 'wcf_revision_nr = [350]';
 	$config['rev_acp'] = ' 0.02.00';
 
 	//==================================================================

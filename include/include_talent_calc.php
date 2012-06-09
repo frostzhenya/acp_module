@@ -224,7 +224,7 @@
 									$max = $i;
 									$spells[$i-1] = $spellid;
 									$spell  = get_spell($spellid);
-									if ($icon == 0) $icon = get_spell_icon_name($spell['SpellIconID']);
+									if ($icon == 0) { $icon = get_spell_icon_name($spell['SpellIconID']); }
 									$name = $spell['SpellName'];
 									$spell_desc[$spellid] = array('name'=>$name, 'desc'=>get_spell_desc($spell));
 								}
@@ -265,6 +265,6 @@
 			 var tc_maxlevel = '.$maxLevel.';
 			 var lang_header = \''.$header.'\';
 			 </script>
-			 <script type="text/javascript" src="'.INCLUDES.'js/talent_calc_base.js"></script>';
+			 <script type="text/javascript" src="'.$modules['acp_module'].'js/talent_calc_base.js"></script>';
 		}
 ?>
